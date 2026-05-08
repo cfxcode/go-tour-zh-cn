@@ -1,0 +1,3 @@
+service: google
+runtime: go125
+main: ./cmd/googlegolangorg

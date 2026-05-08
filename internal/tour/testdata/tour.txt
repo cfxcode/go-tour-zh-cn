@@ -1,0 +1,5 @@
+GET https://any/
+redirect == /tour/
+
+GET https://any/tour/
+body contains >Go 语言之旅<
