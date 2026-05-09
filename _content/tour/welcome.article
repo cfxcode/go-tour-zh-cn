@@ -33,7 +33,7 @@ https://github.com/Go-zh/website
 编辑程序并再次运行它。
 
 当你点击 [[javascript:highlightAndClick("#format")][格式化]]（快捷键：`Ctrl` + `Enter`）按钮后，
-编辑器中的文本会被 [[/cmd/gofmt/][gofmt]] 工具格式化。你可以点击
+编辑器中的文本会被 [[https://pkg.go.dev/cmd/gofmt/][gofmt]] 工具格式化。你可以点击
 [[javascript:highlightAndClick(".syntax-checkbox")][语法高亮]] 按钮开启或关闭语法高亮。
 
 如果你准备好了，请点击页面底部的 [[javascript:highlightAndClick(".next-page")][右箭头]] 或按
@@ -63,12 +63,12 @@ https://github.com/Go-zh/website
 #appengine: 本教程也可作为独立的程序使用，这样你无需访问互联网就能运行它。
 #appengine: 独立的 tour 更快，它会在你自己的机器上构建并运行代码示例。
 #appengine: 要在本地安装并运行此教程的中文版，首先你需要科学上网环境并
-#appengine: [[/doc/install][安装 Go]]，然后在命令行执行：
+#appengine: [[https://go.dev/doc/install][安装 Go]]，然后在命令行执行：
 #appengine:
 #appengine:   go install github.com/Go-zh/website/tour@latest
 #appengine:
 #appengine: 这会把 `tour` 可执行文件安装到你的
-#appengine: [[/cmd/go/#hdr-GOPATH_and_Modules][GOPATH]] 的 `bin` 目录中。
+#appengine: [[https://pkg.go.dev/cmd/go/#hdr-GOPATH_and_Modules][GOPATH]] 的 `bin` 目录中。
 #appengine: 运行该程序时，它会打开浏览器并显示你的本地版教程。
 #appengine:
 #appengine: 当然，你也可以继续通过本网站学习本教程。
@@ -88,7 +88,7 @@ https://github.com/Go-zh/website
 #appengine:
 #appengine: 练习场使用 Go 的最新稳定版。
 #appengine:
-#appengine: 更多信息请参阅「[[/blog/playground][Go 练习场的内部机制]]」。
+#appengine: 更多信息请参阅「[[https://go.dev/blog/playground][Go 练习场的内部机制]]」。
 #appengine:
 #appengine: .play welcome/sandbox.go
 

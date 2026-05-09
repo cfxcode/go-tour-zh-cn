@@ -236,7 +236,7 @@ nil 接口值既不保存值也不保存具体类型。
 
 * Stringer
 
-[[/pkg/fmt/][`fmt`]] 包中定义的 [[/pkg/fmt/#Stringer][`Stringer`]] 是最普遍的接口之一。
+[[https://pkg.go.dev/fmt/][`fmt`]] 包中定义的 [[https://pkg.go.dev/fmt/#Stringer][`Stringer`]] 是最普遍的接口之一。
 
 	type Stringer interface {
 		String() string
@@ -314,7 +314,7 @@ Go 标准库包含了该接口的[[https://cs.opensource.google/search?q=Read%5C
 
 `Read` 用数据填充给定的字节切片并返回填充的字节数和错误值。在遇到数据流的结尾时，它会返回一个 `io.EOF` 错误。
 
-示例代码创建了一个 [[/pkg/strings/#Reader][`strings.Reader`]] 并以每次 8 字节的速度读取它的输出。
+示例代码创建了一个 [[https://pkg.go.dev/strings/#Reader][`strings.Reader`]] 并以每次 8 字节的速度读取它的输出。
 
 .play methods/reader.go
 
@@ -326,9 +326,9 @@ Go 标准库包含了该接口的[[https://cs.opensource.google/search?q=Read%5C
 
 * 练习：rot13Reader
 
-有种常见的模式是一个 [[/pkg/io/#Reader][`io.Reader`]] 包装另一个 `io.Reader`，然后通过某种方式修改其数据流。
+有种常见的模式是一个 [[https://pkg.go.dev/io/#Reader][`io.Reader`]] 包装另一个 `io.Reader`，然后通过某种方式修改其数据流。
 
-例如，[[/pkg/compress/gzip/#NewReader][`gzip.NewReader`]] 函数接受一个 `io.Reader`（已压缩的数据流）并返回一个同样实现了 `io.Reader` 的 `*gzip.Reader`（解压后的数据流）。
+例如，[[https://pkg.go.dev/compress/gzip/#NewReader][`gzip.NewReader`]] 函数接受一个 `io.Reader`（已压缩的数据流）并返回一个同样实现了 `io.Reader` 的 `*gzip.Reader`（解压后的数据流）。
 
 编写一个实现了 `io.Reader` 并从另一个 `io.Reader` 中读取数据的 `rot13Reader`，通过应用 [[https://en.wikipedia.org/wiki/ROT13][rot13]] 代换密码对数据流进行修改。
 
@@ -338,7 +338,7 @@ Go 标准库包含了该接口的[[https://cs.opensource.google/search?q=Read%5C
 
 * 图像
 
-[[/pkg/image/#Image][`image`]] 包定义了 `Image` 接口：
+[[https://pkg.go.dev/image/#Image][`image`]] 包定义了 `Image` 接口：
 
 	package image
 
@@ -348,11 +348,11 @@ Go 标准库包含了该接口的[[https://cs.opensource.google/search?q=Read%5C
 		At(x, y int) color.Color
 	}
 
-*注意* ：`Bounds` 方法的返回值 `Rectangle` 实际上是一个 [[/pkg/image/#Rectangle][`image.Rectangle`]]，它在 `image` 包中声明。
+*注意* ：`Bounds` 方法的返回值 `Rectangle` 实际上是一个 [[https://pkg.go.dev/image/#Rectangle][`image.Rectangle`]]，它在 `image` 包中声明。
 
-（请参阅[[/pkg/image/#Image][文档]]了解全部信息。）
+（请参阅[[https://pkg.go.dev/image/#Image][文档]]了解全部信息。）
 
-`color.Color` 和 `color.Model` 类型也是接口，但是通常因为直接使用预定义的实现 `image.RGBA` 和 `image.RGBAModel` 而被忽视了。这些接口和类型由 [[/pkg/image/color/][`image/color`]] 包定义。
+`color.Color` 和 `color.Model` 类型也是接口，但是通常因为直接使用预定义的实现 `image.RGBA` 和 `image.RGBAModel` 而被忽视了。这些接口和类型由 [[https://pkg.go.dev/image/color/][`image/color`]] 包定义。
 
 .play methods/images.go
 
@@ -360,7 +360,7 @@ Go 标准库包含了该接口的[[https://cs.opensource.google/search?q=Read%5C
 
 还记得之前编写的[[/tour/moretypes/18][图片生成器]] 吗？我们再来编写另外一个，不过这次它将会返回一个 `image.Image` 的实现而非一个数据切片。
 
-定义你自己的 `Image` 类型，实现[[/pkg/image/#Image][必要的方法]]并调用 `pic.ShowImage`。
+定义你自己的 `Image` 类型，实现[[https://pkg.go.dev/image/#Image][必要的方法]]并调用 `pic.ShowImage`。
 
 `Bounds` 应当返回一个 `image.Rectangle` ，例如 `image.Rect(0,`0,`w,`h)`。
 

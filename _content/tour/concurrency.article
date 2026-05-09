@@ -141,7 +141,7 @@ Go 程在相同的地址空间中运行，因此在访问共享的内存时必�
 
 这里涉及的概念叫做 *互斥（mutual*exclusion）* ，我们通常使用 *互斥锁（Mutex）* 这一数据结构来提供这种机制。
 
-Go 标准库中提供了 [[/pkg/sync/#Mutex][`sync.Mutex`]] 互斥锁类型及其两个方法：
+Go 标准库中提供了 [[https://pkg.go.dev/sync/#Mutex][`sync.Mutex`]] 互斥锁类型及其两个方法：
 
 - `Lock`
 - `Unlock`
@@ -173,15 +173,15 @@ Go
 开始。
 它包含了参考、指南、视频等等更多资料。
 
-了解如何组织 Go 代码并在其上工作，参阅[[https://www.youtube.com/watch?v=XCsL89YtqCs][此视频]]，或者阅读[[/doc/code.html][如何编写 Go 代码]]。
+了解如何组织 Go 代码并在其上工作，参阅[[https://www.youtube.com/watch?v=XCsL89YtqCs][此视频]]，或者阅读[[https://go.dev/doc/code.html][如何编写 Go 代码]]。
 
-如果你需要标准库方面的帮助，请参考[[/pkg/][包手册]]。如果是语言本身的帮助，阅读[[/ref/spec][语言规范]]是件令人愉快的事情。
+如果你需要标准库方面的帮助，请参考[[https://pkg.go.dev/][包手册]]。如果是语言本身的帮助，阅读[[https://go.dev/ref/spec][语言规范]]是件令人愉快的事情。
 
-进一步探索 Go 的并发模型，参阅 [[https://www.youtube.com/watch?v=f6kdp27TYZs][Go 并发模型]]([[https://talks.go-zh.org/2012/concurrency.slide][幻灯片]])以及[[https://www.youtube.com/watch?v=QDDwwePbDtw][深入 Go 并发模型]]([[https://talks.go-zh.org/2013/advconc.slide][幻灯片]])并阅读[[/doc/codewalk/sharemem/][通过通信共享内存]]的代码之旅。
+进一步探索 Go 的并发模型，参阅 [[https://www.youtube.com/watch?v=f6kdp27TYZs][Go 并发模型]]([[https://talks.go-zh.org/2012/concurrency.slide][幻灯片]])以及[[https://www.youtube.com/watch?v=QDDwwePbDtw][深入 Go 并发模型]]([[https://talks.go-zh.org/2013/advconc.slide][幻灯片]])并阅读[[https://go.dev/doc/codewalk/sharemem/][通过通信共享内存]]的代码之旅。
 
-想要开始编写 Web 应用，请参阅[[https://vimeo.com/53221558][一个简单的编程环境]]([[https://talks.go-zh.org/2012/simple.slide][幻灯片]])并阅读[[/doc/articles/wiki/][编写 Web 应用]]的指南。
+想要开始编写 Web 应用，请参阅[[https://vimeo.com/53221558][一个简单的编程环境]]([[https://talks.go-zh.org/2012/simple.slide][幻灯片]])并阅读[[https://go.dev/doc/articles/wiki/][编写 Web 应用]]的指南。
 
-[[/doc/codewalk/functions/][函数：Go 中的一等公民]]展示了有趣的函数类型。
+[[https://go.dev/doc/codewalk/functions/][函数：Go 中的一等公民]]展示了有趣的函数类型。
 
 [[https://blog.go-zh.org/][Go 博客]]有着众多关于 Go 的文章和信息。
 

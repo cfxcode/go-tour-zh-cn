@@ -52,7 +52,7 @@ https://github.com/Go-zh/website
 
 注意类型在变量名的 *后面*。
 
-（参考这篇关于 [[/blog/gos-declaration-syntax][Go 声明语法]]
+（参考这篇关于 [[https://go.dev/blog/declaration-syntax][Go 声明语法]]
 的文章，了解为何使用这种类型声明的形式。）
 
 .play basics/functions.go
